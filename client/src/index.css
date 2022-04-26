@@ -62,3 +62,21 @@ input{
   margin-top: 10px !important;
   box-shadow: none !important;
 }
+.adminfunctions{
+  padding: 10px;
+  background-color: rgb(108, 110, 100);
+}
+
+.adminfunctions li{
+  list-style-type:none !important ;
+  display: inline !important;
+  color: white !important;
+}
+.adminfunctions li a{
+color: white !important;
+padding-left: 20px;
+}
+
+td,th,tr{
+  text-align: left;
+}

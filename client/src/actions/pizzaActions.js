@@ -29,6 +29,13 @@ var filteredPizzas ;
         const response =await axios.get('/api/pizzas/getallpizzas')
         filteredPizzas = response.data.filter(pizza=>pizza.name.toLowerCase().includes(searchkey))
 
+if(category != 'all'){
+    filteredPizzas = response.data.filter(pizza=>pizza.category.toLowerCase()==category)
+
+}
+
+
+
         dispatch({ type: 'GET_PIZZAS_SUCCESS' , payload: filteredPizzas})
 
     } catch (error) {
@@ -38,5 +45,20 @@ var filteredPizzas ;
     }
 
 
+
+}
+export const addPizza =(pizza)=>async dispatch=>{
+    dispatch({type: 'ADD_PIZZA_REQUEST'})
+  try {
+      const response= await axios.post('/api/pizzas/addpizza', {pizza})
+      console.log(response);
+  dispatch({type: 'ADD_PIZZA_SUCCESS'})
+
+      
+  } catch (error) {
+      
+  dispatch({type: 'ADD_PIZZA_FAILED', payload: error})
+
+  }
 
 }
