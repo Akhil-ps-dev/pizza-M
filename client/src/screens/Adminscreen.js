@@ -42,9 +42,7 @@ export default function Adminscreen() {
 
                 </li>
             </ul>
-            <Routes>
-
-            </Routes>
+         
 
                         </div>
     )

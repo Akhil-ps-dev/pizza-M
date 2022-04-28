@@ -12,6 +12,7 @@ import Userlist from './screens/Userlist';
 import Orderslist from './screens/Orderslist';
 import Addpizza from './screens/Addpizza';
 import Pizzaslist from './screens/Pizzaslist';
+import Editpizza from './screens/Editpizza';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path="/admin/orderslist"  element={<Orderslist/>} />
           <Route path="/admin/foodlist"  element={<Pizzaslist/>} />
           <Route path="/admin/addfood"  element={<Addpizza/>} />
+          <Route path="/admin/editfood/"  element={<Editpizza/>} />
+
 
 
 

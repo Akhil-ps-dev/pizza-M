@@ -4,6 +4,8 @@ import Pizza from '../components/Pizza'
 
 import { getAllPizzas } from '../actions/pizzaActions'
 import Filter from '../components/Filter'
+import Loading from '../components/Loading'
+import Error from '../components/Error'
 
 export default function Homescreen() {
 
@@ -29,7 +31,14 @@ export default function Homescreen() {
 
             <div className='row justify-content-center'>
 
-                {loading ? (<h1>Loading...</h1>) : error ? (<h1>Some thing went wrong</h1>) : (
+                {loading ? (
+                
+                <Loading/>
+                ) : error ? (
+                    <Error error='Something went wrong'/>
+                
+                
+                ) : (
 
                     pizzas.map(pizza => {
                         return <div className='col-md-3 m-3' key={pizza._id}>

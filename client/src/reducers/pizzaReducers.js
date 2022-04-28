@@ -19,6 +19,27 @@ default: return state
 }
 
 }
+export const getPizzaByIdReducer =(state={},action)=>{
+    switch(action.type)
+    {
+        case 'GET_PIZZABYID_REQUEST': return{
+            loading: true,
+            ...state
+        }
+        case 'GET_PIZZABYID_SUCCESS': return{
+            loading : false,
+    
+            pizza: action.payload
+        }
+        case 'GET_PIZZABYID_FAILED': return{
+        error: action.payload,
+        loading : false,
+        
+        }
+    default: return state
+    }
+    
+    }
 
 
 
