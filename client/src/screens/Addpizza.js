@@ -43,7 +43,7 @@ const addpizzastate = useSelector(state=>state.addPizzaReducer)
           <input className='form-control' type="text" placeholder='description' value={description} onChange={(e) => { setdescription(e.target.value) }} />
           <input className='form-control' type="text" placeholder='image url' value={image} onChange={(e) => { setimage(e.target.value) }} />
 
-          <button className='btn mt-3' type="submit">Add Pizza</button>
+          <button className='btn mt-3' type="submit">Add Food</button>
         </form>
       </div>
 

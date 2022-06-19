@@ -14,7 +14,7 @@ export default function Filter() {
                 <div className='col-md-3 w-10'>
                     <input 
                     onChange={(e)=>{setsearchkey(e.target.value)}}
-                    value={searchkey} type="text" className='form-control' placeholder='search pizza' />
+                    value={searchkey} type="text" className='form-control' placeholder='search food' />
 
                 </div>
                 <div className='col-md-3 w-10 '>

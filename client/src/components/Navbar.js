@@ -13,7 +13,7 @@ const cartstate = useSelector(state=>state.cartReducer)
 
      
             <nav class="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
-                <a class="navbar-brand" href="/">CHATTER BOO</a>
+                <a class="navbar-brand" href="/">Food-App</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
